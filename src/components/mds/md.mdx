@@ -1,0 +1,85 @@
+# Introduction
+
+The study of affective appraisal of events has long been central to affective computing and cognitive psychology. While appraisal theories suggest that emotions emerge through individualized appraisals shaped by goals and dispositions, NLP research has largely focused on writer-expressed sentiments and reader-based unified emotional labels. This focus overlooks reader-based nuanced perception, which is critical for applications, including empathetic agents, mental health support, and personalized AI assistants.
+
+To address the gap, we introduce **Persona-E²** (Persona-Event2Emotion), a novel dataset that incorporates MBTI and Big Five traits into reader-based emotion labeling.
+
+# Dataset Framework
+
+The following figure illustrates the overview of the Persona-E² framework.
+
+![Framework Overview](./image_paper/FlowChart_v4.png)
+
+# Dataset Visualization
+
+Below are key visualizations from the Persona-E² dataset.
+
+### Emotion Distribution (Writers vs Readers)
+![Emotion Bar Chart](./image_paper/EmoBar_v9.png)
+
+### Dataset Hierarchy (Sunburst)
+![Dataset Sunburst](./image_paper/Sun_v4.png)
+
+### Top-K Agreement Heatmap
+![Agreement Heatmap](./image_paper/results_topk_percentage_heatmap_v3.png)
+
+# Annotation Reliability
+## Annotation Toolkit Platform  
+[🏷️ LabelText](https://github.com/CRIS-YANGYQ/LabelText)
+
+## Personality Agreement Gap (PAG) Analysis
+
+The following results demonstrate how personality traits influence inter-annotator agreement.
+
+| Personality Group | In-Group Agr. (%) | Out-Group Agr. (%) | PAG (%) |
+| :--- | :---: | :---: | :---: |
+| **BFI Cluster 0** | 61.07 | 35.11 | **+25.96** |
+| **BFI Cluster 1** | 57.63 | 37.59 | +20.03 |
+| **MBTI ESTP** | 64.33 | 37.35 | **+26.98** |
+| **MBTI INTP** | 60.03 | 36.83 | +23.20 |
+
+Positive PAG values reveal that in-group agreement consistently exceeds out-group agreement, providing empirical evidence that affective disagreement is structured by trait-aligned patterns.
+
+# Experimental Results
+
+We evaluate several state-of-the-art Large Language Models (LLMs) on our Persona-E² dataset, focusing on their ability to predict emotions based on different prompt strategies: **General**, **Persona**, and **Chain-of-Thought (CoT)**.
+
+## Comparison of Different Models (SDS Subset)
+
+The following table summarizes the Top-1 and Top-2 Accuracy across various data sources (News, Social Media, Life-Experience) in the Subjective Divergence Subset (SDS).
+
+| Metric | Model | Prompt | News | Social Media | Life Exp. | Overall |
+| :--- | :--- | :--- | :---: | :---: | :---: | :---: |
+| **Top-1 Acc.** | GPT5.1 | General | 31.8 | 18.2 | 32.4 | 29.0 |
+| | | Persona | 25.0 | 18.2 | 35.3 | 27.0 |
+| | | CoT | **29.5** | **27.3** | 35.3 | **31.0** |
+| | Llama3 | General | 29.5 | 9.1 | 32.4 | 26.0 |
+| | | Persona | 29.3 | 4.8 | 32.4 | 25.0 |
+| | | CoT | 20.5 | 13.6 | 32.4 | 23.0 |
+| | Qwen3 | General | 18.2 | 23.1 | 20.3 | 20.0 |
+| | | Persona | 26.9 | 21.4 | 33.7 | 28.0 |
+| | | CoT | 25.4 | 22.7 | 26.0 | 25.0 |
+| | Gemma3 | General | 18.2 | 22.7 | 35.3 | 25.0 |
+| | | Persona | 25.0 | 27.3 | 32.4 | 28.0 |
+| | | CoT | 27.3 | 18.2 | 29.4 | 26.0 |
+| | Ministral3 | General | 18.2 | 5.0 | **36.4** | 22.0 |
+| | | Persona | 13.6 | 9.1 | 35.3 | 20.0 |
+| | | CoT | 20.5 | 4.5 | 35.3 | 22.0 |
+
+## Cognitive Soundness (Win-Rate)
+
+We evaluated the cognitive plausibility of the psychological reasoning process.
+
+| Model | Consistency (BFI) | Plausibility (BFI) | Specificity (BFI) |
+| :--- | :---: | :---: | :---: |
+| GPT5.1 | **78.8** | **70.4** | **68.9** |
+| Llama3 | 70.8 | 55.4 | 61.3 |
+| Qwen3 | 70.2 | 59.9 | 56.9 |
+| Gemma3 | 67.8 | 63.1 | 65.0 |
+| Ministral3 | 72.0 | 58.9 | 65.5 |
+
+# Key Insights
+
+1.  **Domain-Driven Divergence**: News acts as a rational buffer, while social media acts as an "Emotional Black Hole" with severe negativity bias. Life narratives trigger a "Psychological Immune System" with optimism bias.
+2.  **Personality Modulation**: Personality significantly acts as a filter for emotional transfer. High Openness correlates with a higher Neutralization Rate.
+3.  **LLM Capabilities**: LLMs successfully map emotional contexts to relevant semantic neighborhoods but fail to pinpoint the precise label. BFI outperforms MBTI in mitigating "personality illusion."
