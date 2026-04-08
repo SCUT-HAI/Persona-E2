@@ -103,7 +103,7 @@ const addresses = [
 
 // 共一和通讯提示
 const con_and_corresponding_author = 
-  "#: Equal Contribution. *: Corresponding Author."
+  "*: Corresponding Author."
 
 // 最新消息
 const news = "🔥 [2026-03-19] Persona-E² project page is launched."
@@ -212,7 +212,7 @@ const buttons = [
     <el-row justify="center" class="emphasis" v-for="emphasis in emphases">
         {{ emphasis }}
     </el-row>
-    
+
     <!-- 地址名单 -->
     <el-row justify="center">
       <a :href=address.homepage v-for="address in addresses">
