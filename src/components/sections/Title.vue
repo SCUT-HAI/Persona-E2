@@ -61,7 +61,7 @@ const authors = [
   },
   {
     name: "Dong She",
-    icon: "./icon/photoShe.png",
+    icon: "./icon/photoShe.jpg",
     homepage: "https://github.com/Affective-AI",
     address_flag: "1,2"
   },
@@ -75,7 +75,7 @@ const authors = [
     name: "Yang Gao",
     icon: "./icon/photoGao.jpg",
     homepage: "https://ygao36buffalo.github.io/truebluegy.github.io/",
-    address_flag: "1,2"
+    address_flag: "1,2,*"
   },
   {
     name: "Zhanpeng Jin",
@@ -203,6 +203,16 @@ const buttons = [
       </a>
     </el-row>
 
+    <!-- 共一和通讯提示内容 -->
+    <el-row justify="center" class="con-cor">
+        {{ con_and_corresponding_author }}
+    </el-row>
+
+    <!-- 强调内容 -->
+    <el-row justify="center" class="emphasis" v-for="emphasis in emphases">
+        {{ emphasis }}
+    </el-row>
+    
     <!-- 地址名单 -->
     <el-row justify="center">
       <a :href=address.homepage v-for="address in addresses">
@@ -213,16 +223,6 @@ const buttons = [
           </span>
         </el-button>
       </a>
-    </el-row>
-
-    <!-- 共一和通讯提示内容 -->
-    <el-row justify="center" class="con-cor">
-        {{ con_and_corresponding_author }}
-    </el-row>
-
-    <!-- 强调内容 -->
-    <el-row justify="center" class="emphasis" v-for="emphasis in emphases">
-        {{ emphasis }}
     </el-row>
 
     <!-- 提供引导按钮 -->
