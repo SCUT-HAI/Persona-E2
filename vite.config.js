@@ -23,11 +23,7 @@ export default defineConfig({
       ],
     }),
   ],
-<<<<<<< HEAD
-  base:'/Persona-E2',
-=======
   base:'/Persona-E2/',
->>>>>>> a2dee384bbdb212f57abfce14b719f9f1d3cb31e
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
