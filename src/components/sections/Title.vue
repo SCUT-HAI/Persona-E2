@@ -61,7 +61,7 @@ const authors = [
   },
   {
     name: "Dong She",
-    icon: "./icon/photoShe.jpg",
+    icon: "./icon/photoSheDong.png",
     homepage: "https://github.com/Affective-AI",
     address_flag: "1,2"
   },
