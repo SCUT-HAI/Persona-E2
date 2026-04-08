@@ -208,11 +208,6 @@ const buttons = [
         {{ con_and_corresponding_author }}
     </el-row>
 
-    <!-- 强调内容 -->
-    <el-row justify="center" class="emphasis" v-for="emphasis in emphases">
-        {{ emphasis }}
-    </el-row>
-
     <!-- 地址名单 -->
     <el-row justify="center">
       <a :href=address.homepage v-for="address in addresses">
@@ -223,6 +218,11 @@ const buttons = [
           </span>
         </el-button>
       </a>
+    </el-row>
+
+    <!-- 强调内容 -->
+    <el-row justify="center" class="emphasis" v-for="emphasis in emphases">
+        {{ emphasis }}
     </el-row>
 
     <!-- 提供引导按钮 -->
