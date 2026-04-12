@@ -121,6 +121,7 @@ const buttons = [
   {
     disabled: true,
     name: "Paper",
+    link: "https://scut-hai.github.io/Persona-E2/",
     component: Document,
   },
   {
@@ -129,15 +130,13 @@ const buttons = [
     component: Document,
   },
   {
-    disabled: false,
+    disabled: true,
     name: "Code",
-    link: "https://github.com/JunyaoHu/academic-project-page-template-vue",
     component: Files,
   },
   {
-    disabled: false,
+    disabled: true,
     name: "Demo",
-    link: "https://junyaohu.github.io/academic-project-page-template-vue",
     component: MagicStick,
   },
   {
@@ -151,15 +150,14 @@ const buttons = [
     component: DataAnalysis,
   },
   {
-    disabled: false,
-    name: "Video (减论)",
-    link: "https://www.bilibili.com/video/BV15XkgYiE73/",
+    disabled: true,
+    name: "Video",
+    // link: "",
     component: Film,
   },
   {
-    disabled: false,
+    disabled: true,
     name: "Video (Tutorial)",
-    link: "https://www.bilibili.com/video/BV1oUrfYzEqZ",
     component: Film,
   },
 ]
