@@ -23,18 +23,23 @@ const logo = {
 
 // 右侧更多菜单
 const more_paper = {
-    "ExtDM": {
-        name: "ExtDM - CVPR 2024",
-        link: "https://zzcheng.top/ExtDM/",
+    "AICA_Bench": {
+        name: "AICA-Bench - ACL 2026",
+        link: "https://scut-hai.github.io/AICA-Bench/",
     },
-    "MPOT": {
-        name: "MPOT - ICCV 2023",
-        link: "https://zzcheng.top/MPOT/",
+    "ChatRex": {
+        name: "ChatRex",
+        link: "https://github.com/IDEA-Research/ChatRex",
     },
-    "ControlNet": {
-        name: "ControlNet - ICCV 2023",
-        link: "https://github.com/lllyasviel/ControlNet",
-    }
+
+    // "MPOT": {
+    //     name: "MPOT - ICCV 2023",
+    //     link: "https://zzcheng.top/MPOT/",
+    // },
+    // "ControlNet": {
+    //     name: "ControlNet - ICCV 2023",
+    //     link: "https://github.com/lllyasviel/ControlNet",
+    // }
 }
 
 </script>
@@ -72,14 +77,17 @@ const more_paper = {
         <el-sub-menu index="2">
             <template #title>More</template>
             <el-menu-item index="2-1">
-                <a :href=more_paper.ExtDM.link>{{ more_paper.ExtDM.name }}</a>
+                <a :href=more_paper.AICA_Bench.link>{{ more_paper.AICA_Bench.name }}</a>
             </el-menu-item>
             <el-menu-item index="2-2">
+                <a :href=more_paper.ChatRex.link>{{ more_paper.ChatRex.name }}</a>
+            </el-menu-item>
+            <!-- <el-menu-item index="2-2">
                 <a :href=more_paper.MPOT.link>{{ more_paper.MPOT.name }}</a>
             </el-menu-item>
             <el-menu-item index="2-3">
                 <a :href=more_paper.ControlNet.link>{{ more_paper.ControlNet.name }}</a>
-            </el-menu-item>
+            </el-menu-item> -->
         </el-sub-menu>
 
     </el-menu>
