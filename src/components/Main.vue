@@ -11,11 +11,8 @@ import ImageSelector from './sections/ImageSelector.vue'
 import Echart from './sections/Echart.vue'
 import EmoBarChart from './sections/EmoBarChart.vue'
 import DomainPieChart from './sections/DomainPieChart.vue'
-import Table from './sections/Table.vue'
-import Table1 from './sections/Table1.vue'
-import Table2 from './sections/Table2.vue'
-import Table3 from './sections/Table3.vue'
-import Table4 from './sections/Table4.vue'
+import RQ2_Top1_2Acc from './sections/RQ2_Top1_2Acc.vue'
+import RQ3_Winrate from './sections/RQ3_Winrate.vue'
 import Detail from './sections/Detail.vue'
 import Collapse from './sections/Collapse.vue'
 import SeletionForComparison from './sections/SeletionForComparison.vue'
@@ -39,17 +36,12 @@ export default {
     EmoBarChart,
     DomainPieChart,
     Collapse,
-    Table,
-    Table1,
-    Table2,
-    Table3,
-    Table4,
+    RQ2_Top1_2Acc,
+    RQ3_Winrate,
     Detail,
     SeletionForComparison,
     Comment,
-    Latex,
-    Model3D,
-    GaussianSplats3D
+    Latex
   }
 }
 </script>
@@ -58,13 +50,11 @@ export default {
   <Title/>
   <Abstract/>
   <Markdown/>
-  <Table1/>
-  <Table2/>
-  <Table3/>
-  <Table4/>
+  <DomainPieChart/>
+  <RQ2_Top1_2Acc/>
+  <RQ3_Winrate/>
   <Echart/>
   <Detail/>
   <EmoBarChart/>
-  <DomainPieChart/>
   <BibTeX/>
   </template>

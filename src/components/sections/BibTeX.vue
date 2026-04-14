@@ -4,9 +4,11 @@ export default {
     return {
       bibtex: [
         "@inproceedings{yang2026personae2,",
-        "    title={Persona-E²: A Dataset for Persona-driven Event and Emotion},",
+        "    title={Persona-E$^2$: A Human-Grounded Dataset for Personality-Shaped Emotional Responses to Textual Events},",
         "    author={Yang, Yuqin and Zhou, Haowu and Tu, Haoran and Hui, Zhiwen and Yan, Shiqi and Li, HaoYang and She, Dong and Yao, Xianrong and Gao, Yang and Jin, Zhanpeng},",
         "    booktitle={Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (ACL)},",
+        "    url={https://arxiv.org/abs/2604.09162},",
+        "    doi={10.48550/arXiv.2604.09162},",
         "    year={2026}",
         "}",
       ],

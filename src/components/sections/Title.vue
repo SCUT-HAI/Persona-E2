@@ -1,7 +1,12 @@
 <script lang="ts" setup>
 
 import { ElIcon } from 'element-plus'
-import { Document, Files, MagicStick, Picture, DataAnalysis, Film } from '@element-plus/icons-vue'
+// 以下图标均来自 Element Plus 官方图标库 @element-plus/icons-vue
+// 查看全部可用图标：
+// 1. 官方文档 https://element-plus.org/zh-CN/component/icon
+// 2. 直接浏览源码 https://github.com/element-plus/element-plus-icons-vue/tree/main/packages
+// 3. 本地 node_modules/@element-plus/icons-vue/dist/index.d.ts 中查看导出列表
+import { Document, Files, MagicStick, Picture, DataAnalysis, Film, DataBoard } from '@element-plus/icons-vue'
 
 // logo地址，没有则置为""即可
 const logo = "./icon/Web-logo.png"
@@ -120,15 +125,16 @@ const emphases = [
 // 提供引导资料链接
 const buttons = [
   {
-    disabled: true,
+    disabled: false,
     name: "Paper",
-    link: "https://scut-hai.github.io/Persona-E2/",
+    link: "https://arxiv.org/abs/2604.09162",
     component: Document,
   },
   {
-    disabled: true,
-    name: "中译版",
-    component: Document,
+    disabled: false,
+    name: "Label Toolkit",
+    link: "https://github.com/CRIS-YANGYQ/LabelText",
+    component: Files,
   },
   {
     disabled: true,
