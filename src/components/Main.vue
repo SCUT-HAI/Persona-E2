@@ -14,6 +14,9 @@ import DomainPieChart from './sections/DomainPieChart.vue'
 import Table from './sections/Table.vue'
 import Table1 from './sections/Table1.vue'
 import Table2 from './sections/Table2.vue'
+import Table3 from './sections/Table3.vue'
+import Table4 from './sections/Table4.vue'
+import Detail from './sections/Detail.vue'
 import Collapse from './sections/Collapse.vue'
 import SeletionForComparison from './sections/SeletionForComparison.vue'
 import Comment from './sections/Comment.vue'
@@ -39,6 +42,9 @@ export default {
     Table,
     Table1,
     Table2,
+    Table3,
+    Table4,
+    Detail,
     SeletionForComparison,
     Comment,
     Latex,
@@ -54,9 +60,11 @@ export default {
   <Markdown/>
   <Table1/>
   <Table2/>
+  <Table3/>
+  <Table4/>
   <Echart/>
+  <Detail/>
   <EmoBarChart/>
   <DomainPieChart/>
-
   <BibTeX/>
   </template>

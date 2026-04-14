@@ -4,7 +4,7 @@ import { ElIcon } from 'element-plus'
 import { Document, Files, MagicStick, Picture, DataAnalysis, Film } from '@element-plus/icons-vue'
 
 // logo地址，没有则置为""即可
-const logo = "./icon/logo.png"
+const logo = "./icon/Web-logo.png"
 
 // 标题
 const title = 'Persona-E²'
@@ -90,13 +90,13 @@ const addresses = [
   {
     address_flag: "1",
     name: "South China University of Technology",
-    icon: "./icon/SCUT-logo.svg",
+    icon: "./icon/scut-logo.png",
     homepage: "https://www.scut.edu.cn/"
   },
   {
     address_flag: "2",
     name: "HAI Lab",
-    icon: "./icon/HAI_light_crop.png",
+    icon: "./icon/Web-logo.png",
     homepage: "https://scuthcc.top/"
   },
 ]
@@ -113,7 +113,8 @@ const emphases = [
   "🎉 [ACL 2026] Main Conference",
   "🥰 Persona-driven Event and Emotion Relationship",
   "Explore the impact of persona on emotional responses to events",
-  "Large-scale dataset with expert annotations"
+  "Large-scale dataset with expert annotations",
+  "Connect us: ftyuqin_yang@mail.scut.edu.cn"
 ]
 
 // 提供引导资料链接
