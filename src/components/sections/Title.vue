@@ -6,7 +6,7 @@ import { ElIcon } from 'element-plus'
 // 1. 官方文档 https://element-plus.org/zh-CN/component/icon
 // 2. 直接浏览源码 https://github.com/element-plus/element-plus-icons-vue/tree/main/packages
 // 3. 本地 node_modules/@element-plus/icons-vue/dist/index.d.ts 中查看导出列表
-import { Document, Files, MagicStick, Picture, DataAnalysis, Film, DataBoard } from '@element-plus/icons-vue'
+import { Document, Files, MagicStick, Picture, DataAnalysis, Film, DataBoard, Tools, Collection } from '@element-plus/icons-vue'
 
 // logo地址，没有则置为""即可
 const logo = "./icon/Web-logo.png"
@@ -134,12 +134,25 @@ const buttons = [
     disabled: false,
     name: "Label Toolkit",
     link: "https://github.com/CRIS-YANGYQ/LabelText",
-    component: Files,
+    component: Tools,
   },
   {
-    disabled: true,
-    name: "Code",
+    disabled: false,
+    name: "Project Page",
+    link: "https://scuthcc.top/Persona-E2/",
     component: Files,
+  },
+  {// Kaggle Dataset
+    disabled: false,
+    name: "Kaggle",
+    link: "https://www.kaggle.com/datasets/crisyang777/peronsa-e-personality-shaped-emotion-dataset",
+    component: Collection,
+  },
+  {// Huggingface Dataset
+    disabled: false,
+    name: "Huggingface",
+    link: "https://huggingface.co/datasets/CRIS-YANGYQ/Persona-E2",
+    component: Collection,
   },
   {
     disabled: true,
@@ -194,6 +207,20 @@ const buttons = [
           <span v-if="title_supp" :style="{color:title_supp_color}"> {{ title_supp }}</span>
         </h1>
       </el-col>
+    </el-row>
+
+    <el-row justify="center" class="badge-row">
+      <img class="badge-img" src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-blue.svg" alt="License" />
+      <img class="badge-img" src="https://img.shields.io/badge/Annotations-111k-success.svg" alt="Annotations" />
+      <img class="badge-img" src="https://img.shields.io/badge/Task-Emotion%20Classification-orange.svg" alt="Task" />
+      <a href="https://www.kaggle.com/datasets/crisyang777/peronsa-e-personality-shaped-emotion-dataset" target="_blank" rel="noopener noreferrer">
+        <img class="badge-img" src="https://img.shields.io/badge/Kaggle-Dataset-20BEFF?logo=kaggle&logoColor=white" alt="Kaggle" />
+      </a>
+      <img class="badge-img" src="https://img.shields.io/badge/Huggingface-Coming%20soon-lightgrey.svg" alt="Huggingface Coming Soon" />
+      <a href="https://arxiv.org/abs/2604.09162" target="_blank" rel="noopener noreferrer">
+        <img class="badge-img" src="https://img.shields.io/badge/arXiv-2604.09162-b31b1b?logo=arxiv&logoColor=white" alt="Arxiv" />
+      </a>
+      <img class="badge-img" src="https://img.shields.io/badge/ACL%202026-Coming%20soon-lightgrey.svg" alt="ACL 2026 Coming Soon" />
     </el-row>
 
     <!-- 作者名单 -->
@@ -258,6 +285,18 @@ const buttons = [
   font-size: 42px;
   margin: 32px;
   text-align: center;
+}
+
+/* 标题下方徽章 */
+.badge-row {
+  margin: -8px 0 14px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.badge-img {
+  height: 20px;
 }
 
 /* 姓名和地址按钮 */
