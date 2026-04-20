@@ -163,7 +163,7 @@ export default {
 <template>
   <div class="chart-section">
     <el-row justify="center">
-      <el-col :xs="24" :sm="24" :md="22" :lg="20" :xl="18" class="chart-card">
+      <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" class="chart-card">
         <v-chart class="chart combined-chart" :option="option" autoresize />
       </el-col>
     </el-row>

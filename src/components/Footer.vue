@@ -2,7 +2,7 @@
 // 页脚需要的链接
 const links = {
     Nerfies: "https://github.com/nerfies/nerfies.github.io",
-    junyaohu: "https://github.com/JunyaoHu",
+    junyaohu: "https://github.com/JunyaoHu/academic-project-page-template-vue",
     Vue: "https://cn.vuejs.org/",
     Vite: "https://cn.vitejs.dev/",
     ElementPlus: "https://element-plus.org/zh-CN/",

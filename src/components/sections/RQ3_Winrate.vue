@@ -23,7 +23,6 @@ const getSpecificityClass = ({ columnIndex }) => columnIndex > 0 ? 'col-specific
   <div class="table-section">
     <el-row justify="center">
       <el-col :xs="24" :sm="24" :md="24" :lg="20" :xl="18">
-        <h2 class="md-h2">Cognitive Soundness (Win-Rate)</h2>
         <p class="md-p">
           We evaluated the cognitive plausibility of the psychological reasoning process.
           <strong>Click on any metric header to sort the models.</strong>

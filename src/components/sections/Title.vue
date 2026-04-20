@@ -9,19 +9,19 @@ import { ElIcon } from 'element-plus'
 import { Document, Files, MagicStick, Picture, DataAnalysis, Film, DataBoard, Tools, Collection } from '@element-plus/icons-vue'
 
 // logo地址，没有则置为""即可
-const logo = "./icon/Web-logo.png"
+const logo = "./icon/logo_V2.png"
 
 // 标题
 const title = 'Persona-E²'
 
 // 标题颜色
-const title_color = '#000000'
+const title_color = '#42B883'
 
 // 标题补充，没有则置为''即可
 const title_supp = ': A Human-Grounded Dataset for Personality-Shaped Emotional Responses to Textual Events'
 
 // 标题补充颜色
-const title_supp_color = '#42B883'
+const title_supp_color = '#000000'
 
 // 按钮颜色
 const btn_color = '#444444'
@@ -118,7 +118,7 @@ const emphases = [
   "🎉 [ACL 2026] Main Conference",
   "🥰 Persona-driven Event and Emotion Relationship",
   "Explore the impact of persona on emotional responses to events",
-  "Large-scale dataset with expert annotations",
+  "Large-scale dataset with Human-Grounded annotations",
   "Connect us: ftyuqin_yang@mail.scut.edu.cn"
 ]
 
@@ -216,7 +216,9 @@ const buttons = [
       <a href="https://www.kaggle.com/datasets/crisyang777/peronsa-e-personality-shaped-emotion-dataset" target="_blank" rel="noopener noreferrer">
         <img class="badge-img" src="https://img.shields.io/badge/Kaggle-Dataset-20BEFF?logo=kaggle&logoColor=white" alt="Kaggle" />
       </a>
-      <img class="badge-img" src="https://img.shields.io/badge/Huggingface-Coming%20soon-lightgrey.svg" alt="Huggingface Coming Soon" />
+      <a href="https://huggingface.co/datasets/CRIS-Yang/Persona-E2-Dataset" target="_blank" rel="noopener noreferrer">
+        <img class="badge-img" src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-FFD21E" alt="Huggingface" />
+      </a>
       <a href="https://arxiv.org/abs/2604.09162" target="_blank" rel="noopener noreferrer">
         <img class="badge-img" src="https://img.shields.io/badge/arXiv-2604.09162-b31b1b?logo=arxiv&logoColor=white" alt="Arxiv" />
       </a>

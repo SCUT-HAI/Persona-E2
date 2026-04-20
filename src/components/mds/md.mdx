@@ -1,10 +1,13 @@
+
+
 # Introduction
 
 The study of affective appraisal of events has long been central to affective computing and cognitive psychology. While appraisal theories suggest that emotions emerge through individualized appraisals shaped by goals and dispositions, NLP research has largely focused on writer-expressed sentiments and reader-based unified emotional labels. This focus overlooks reader-based nuanced perception, which is critical for applications, including empathetic agents, mental health support, and personalized AI assistants.
 
 To address the gap, we introduce **Persona-E²** (Persona-Event2Emotion), a novel dataset that incorporates MBTI and Big Five traits into reader-based emotion labeling.
 
-# Dataset Framework
+# Dataset Overview
+## Dataset Framework
 
 The following figure illustrates the overview of the Persona-E² framework.
 
@@ -12,13 +15,22 @@ The following figure illustrates the overview of the Persona-E² framework.
   <img 
     src="./image_paper/FlowChart_v4.png" 
     alt="Framework Overview" 
-    style="width: 1000px; max-width: 150%; height: auto; flex-shrink: 0;" 
+    style="width: 1000px; max-width: 120%; height: auto; flex-shrink: 0;" 
   />
 </div>
 
+## Event Domain Distribution
+<div style="max-width: 1000px; margin: 0 auto; padding: 0 16px;">
+  <DomainPieChart/>
+</div>
 
+## Emotion Distribution
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 18px;">
+  <EmoBarChart/>
+</div>
 # Key Insights
 
+<div style="max-width: 800px; margin: 0 auto; padding: 0 16px;">
 <div style="box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.04); border-radius: 8px; background: #fff; padding: 10px 20px; margin: 16px 0 32px 0;">
   <div style="padding: 14px 0; border-bottom: 1px solid #f0f2f5; font-size: 1.05rem; line-height: 1.6; color: #555; font-family: 'Times New Roman', Times, serif;">
     <span style="font-size: 1.15rem; font-weight: 600; color: #4C5F7F;">1. Domain-Driven Divergence</span>: News acts as a rational buffer, while social media acts as an "Emotional Black Hole" with severe negativity bias. Life narratives trigger a "Psychological Immune System" with optimism bias.
@@ -30,3 +42,20 @@ The following figure illustrates the overview of the Persona-E² framework.
     <span style="font-size: 1.15rem; font-weight: 600; color: #4C5F7F;">3. LLM Capabilities</span>: LLMs successfully map emotional contexts to relevant semantic neighborhoods but fail to pinpoint the precise label. BFI outperforms MBTI in mitigating "personality illusion."
   </div>
 </div>
+</div>
+# Experiment Details
+
+## Subjective Divergence Subset(SDS) Distribution
+  <SDS_Distribution/>
+
+## RQ2
+
+### Prediction Accuracy
+  <RQ2_Top1_2Acc/>
+
+## RQ3
+### Evaluation Metrics
+  <RQ3_Metric/>
+  
+### Cognitive Soundness
+  <RQ3_Winrate/>

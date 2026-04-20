@@ -181,7 +181,7 @@ export default {
 <template>
   <div>
     <el-row justify="center">
-      <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="22" class="chart-card">
+      <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24" class="chart-card">
         
         <div class="chart-container">
           

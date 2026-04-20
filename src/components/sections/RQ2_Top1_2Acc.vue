@@ -65,8 +65,6 @@ const getColumnClass = ({ column }) => {
     
     <el-row justify="center">
       <el-col :xs="24" :sm="24" :md="24" :lg="20" :xl="18">
-        <h1 class="md-h1">Experimental Results</h1>
-        <h2 class="md-h2">Comparison of Different Models (SDS Subset)</h2>
         <p class="md-p">
           The following table summarizes the Top-1 and Top-2 Accuracy across various data sources. 
           <strong>Click on any column header to sort the results.</strong>
