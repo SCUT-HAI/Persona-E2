@@ -160,13 +160,15 @@ const buttons = [
     component: MagicStick,
   },
   {
-    disabled: true,
+    disabled: false,
     name: "Poster",
+    link: "/Persona-E2/poster/Persona-E2_Poster(91cm_119cm).pdf",
     component: Picture,
   },
   {
-    disabled: true,
+    disabled: false,
     name: "Slide",
+    link: "/Persona-E2/powerpoint/Persona-E2-ACL2026-ORAL-v1.ppt",
     component: DataAnalysis,
   },
   {
@@ -222,7 +224,9 @@ const buttons = [
       <a href="https://arxiv.org/abs/2604.09162" target="_blank" rel="noopener noreferrer">
         <img class="badge-img" src="https://img.shields.io/badge/arXiv-2604.09162-b31b1b?logo=arxiv&logoColor=white" alt="Arxiv" />
       </a>
-      <img class="badge-img" src="https://img.shields.io/badge/ACL%202026-Coming%20soon-lightgrey.svg" alt="ACL 2026 Coming Soon" />
+      <a href="https://aclanthology.org/2026.acl-long.1350/" target="_blank" rel="noopener noreferrer">
+        <img class="badge-img" src="https://img.shields.io/badge/ACL%202026-Accepted-green.svg" alt="ACL 2026 Accepted" />
+      </a>
     </el-row>
 
     <!-- 作者名单 -->
