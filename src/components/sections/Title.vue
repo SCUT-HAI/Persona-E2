@@ -172,9 +172,9 @@ const buttons = [
     component: DataAnalysis,
   },
   {
-    disabled: true,
+    disabled: false,
     name: "Video",
-    // link: "",
+    link: "/Persona-E2/presentation/ACL2026_Oral_Session_G_clip.mp4",
     component: Film,
   },
   {
